@@ -59,7 +59,7 @@ function createRootReducer(state: Partial<ApplicationState>) {
                 break;
             }
             case 'ADD_TO_CART':
-                const { id, name, price } = action.product;
+                const { id, name, price } = action.product;                
 
                 if (process.env.BUG_ID !== '7') {
                     if (!draft.cart[id]) {
